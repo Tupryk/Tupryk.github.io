@@ -9,6 +9,9 @@
             * {
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
+            p {
+                font-size: large;
+            }
             body {
                 margin: 0;
                 background-color: floralwhite;
@@ -30,21 +33,30 @@
                 margin-bottom: 100px;
             }
             .all_content {
-                margin-left: 10%;
-                margin-right: 10%;
+                margin-left: 5%;
+                margin-right: 5%;
                 padding: 5%;
             }
             .content {
                 margin-bottom: 100px;
             }
-            .art {
+            .paper img {
+                width: 200px;
+            }
+            .paper_text {
+                width: 70%;
+            }
+            .paper_image {
+                width: 30%;
                 text-align: center;
             }
-            .art img {
-                width: 40%;
-            }
-            .project img {
-                width: 40%;
+            .paper {
+                display: flex;
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid black;
             }
         </style>
     </head>
@@ -60,35 +72,21 @@
                     working part-time as a student research assistant at the <a href="https://argmin.lis.tu-berlin.de/">Learning and Intelligent systems Lab</a>.
                 </p>
             </div>
-            <h2>Projects</h2>
+            <h2>Papers</h2>
             <div class="content">
-                <div class="project">
-                    <h3>RoboCup</h3>
-                    <p>
-                        Currently, I'm working at <a href="https://fuse-robocuprescue.github.io/">FUSE</a> on a robot to participate in 2025s RoboCup Rescue Germany.
-                        I'm one of the co-funders of the group and I'm responsible for the simulation and making the robot fully autonomous.
-                    </p>
-                    <img src="./wheely.png"/>
-                </div>
-                <div class="project">
-                    <h3>Learning-based Multirotor Control Enhancements</h3>
-                    <p>
-                        I wrote my bachelor thesis at the <a href="https://imrclab.github.io/">IMRC Lab</a> @ <a href="https://www.tu.berlin/en/">TU Berlin</a>.
-                    </p>
-                    <img src="./quadrotor.png"/>
-                </div>
-            </div>
-            <h2>Art</h2>
-            <div class="content">
-                <div class="art">
-                    <img src="./struggle.png"/>
-                    <h3>Struggle (2024)</h3>
-                    <p>Acrylic on canvas</p>
+                <div class="paper">
+                    <div class="paper_text">
+                        <a href="https://arxiv.org/pdf/2503.09441"><h3>Neural-Augmented Incremental Nonlinear Dynamic Inversion for Quadrotors with Payload Adaptation</h3></a>
+                        <p>Eckart Cobo-Briesewitz, Khaled Wahba and Wolfgang Hönig</p>
+                    </div>
+                    <div class="paper_image">
+                        <img src="./Subject.png"/>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer">
-            <p>Email: eck4art(at)gmail(dot)com</p>
+            <p>Email: cobo-briesewitz@campus.tu-berlin.de</p>
         </div>
     </body>
 </html>
